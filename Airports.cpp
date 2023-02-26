@@ -28,8 +28,8 @@ public:
     }
 };
 int main() {
-    Planes first("Su-57");
-    Planes second("Mig-29");
+    Planes first("Su-57", 10000, 5000);
+    Planes second("Mig-29", 9000, 4500);
     vector<Planes> vec_planes;
     vec_planes.push_back(first);
     vec_planes.push_back(second);
