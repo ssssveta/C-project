@@ -18,10 +18,3 @@ double haversine(double lat1, double lon1, double lat2, double lon2) {
         double c = 2 * asin(sqrt(a));
         return rad * c;
     }
-
-int main() {
-    double lat1 = 51.5007; double lon1 = 0.1246;
-    double lat2 = 40.6892; double lon2 = 74.0445;
-
-    cout << haversine(lat1, lon1, lat2, lon2) << " K.M.";
-}
