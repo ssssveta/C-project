@@ -1,9 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-float latitude_longitude_to_km(float latitude, float longitude, float max_distance) {
 
-}
 
 double haversine(double lat1, double lon1, double lat2, double lon2) {
 
@@ -18,3 +16,4 @@ double haversine(double lat1, double lon1, double lat2, double lon2) {
         double c = 2 * asin(sqrt(a));
         return rad * c;
     }
+
