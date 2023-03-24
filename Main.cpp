@@ -15,7 +15,14 @@ int main() {
 // запускается функция рассчета куда можно полететь туда и полетим
     destination_airport = where_we_go(vnukovo.latitude, vnukovo.longitude, first);
 //запускается процедура полета в каждый момент времени известны координаты
-    fly(vnukovo, first, destination_airport);
+    while (пока летим) {
+        if (currently_weather_in_destination != 0) {
+            fly(vnukovo, first, destination_airport);
+        } else {
+            destination_airport = where_we_go(currently_lat, currently_lon, plane); // это перерасчет
+        }
+    }
+
 //если погода плоха, то запускается перерасчет
 //после перерасчета процедура полета продолжается до тех пор пока саолет не долетит
     return 0;
